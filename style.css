@@ -1,0 +1,595 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/*********************BANDEAU**********************/
+
+.header {
+  overflow: hidden;
+  background-color: #ffc1fc;
+  background-image: url(img/head.png);
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-height: 3.125rem;
+  margin:1.25rem;
+}
+
+.header-right a {
+  float: left;
+  color: #E171DE;
+  text-align: center;
+  padding: 0.875rem;
+  text-decoration: none;
+  font-size: 1.563rem;
+  line-height: 1.25rem;
+  border-radius: 2.5rem;
+  border-color: white;
+  border-width: 0.188rem;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.btn_boutik{
+  border-radius: 2.5rem;
+  margin:1.25rem;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+/*?
+header a.logo {
+  font-size: 1.563rem;
+  font-weight: bold;
+}
+*/
+
+.header-right {
+  cursor: pointer;
+
+}
+
+
+
+.header-right a:hover {
+  background-color: transparent;
+  border-color: white;
+  border-width: 0.188rem;
+  border-style: solid;
+  color: white;
+  cursor: pointer;
+}
+
+.header-left {
+  cursor: pointer;
+}
+
+.header-left .btn-retour {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 0.875rem;
+  text-decoration: none;
+  font-size: 1.563rem;
+  line-height: 1.25rem;
+  border-radius: 2.5rem;
+  border-color: #E171DE;
+  border-width: 0.188rem;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.header-left .btn-ajout {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 0.875rem;
+  text-decoration: none;
+  font-size: 1.563rem;
+  line-height: 1.25rem;
+  border-radius: 2.5rem;
+  border-color: #E171DE;
+  border-width: 0.188rem;
+  border-style: solid;
+  cursor: pointer;
+}
+
+
+.header-left a:hover {
+  background-color: transparent;
+  border-color: #E171DE;
+  border-width: 0.188;
+  border-style: solid;
+  color: #E171DE;
+  cursor: pointer;
+}
+
+.header-right a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 0.875rem;
+  text-decoration: none;
+  font-size: 1.563rem;
+  line-height: 1.25rem;
+  border-radius: 2.5rem;
+  border-color: #E171DE;
+  border-width: 0.188rem;
+  border-style: solid;
+  cursor: pointer;
+}
+
+
+.header-right a:hover {
+  background-color: transparent;
+  border-color: #E171DE;
+  border-width: 0.188;
+  border-style: solid;
+  color: #E171DE;
+  cursor: pointer;
+}
+
+
+/*********************FIN BANDEAU**********************/
+
+
+.descriptif {
+  height: 28.125rem;
+  width: 50rem;
+  background-color: #e171ddb9;
+  align-items: center;
+  border-radius: 0.625rem;
+  color: #000000;
+  font-style: bold;
+  font-family: 'Franklin Gothic Medium';
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.875rem;
+  margin-bottom: 8rem;
+
+}
+
+.form-details {
+  margin-left: 1rem;;
+}
+
+.img-desc {
+  max-height: 25rem;
+  margin-left: 0.625rem;
+  border-radius: 0.625rem;
+}
+
+.txt1 {
+  margin: 1.875rem;
+}
+
+.txt2 {
+  margin: 1.875rem;
+}
+
+.txt3 {
+  margin: 1.875rem;
+}
+
+.btn-login {
+  background-color: #E171DE;
+  margin:1.25rem;
+
+}
+.btn-retour {
+  background-color: #E171DE;
+  margin:1.25rem;
+
+}
+
+.btn-ajout {
+  background-color: #E171DE;
+  margin:1.25rem;
+}
+
+
+
+.header a.active {
+  background-color: #E171DE;
+  color: white;
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+  margin-top: 0.3rem;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #E171DE;
+  color: white;
+  padding: 0.8rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  border-width: 0.188rem;
+  border-style: solid;
+  border-color: #E171DE;
+}
+
+input[type="submit"]:hover {
+  font-weight: bold;
+  background-color: transparent;
+  color: #E171DE;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #E171DE;
+}
+
+.formulaire {
+  width: 100%;
+  max-width: 37rem;
+  margin: 0 10% 0 35%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+
+}
+/* PopUpConnexion */
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+  display: inline-block;
+  border: 0.063rem solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #E171DE;
+  color: white;
+  padding: 0.875rem 1.25rem;
+  margin: 0.5rem 0;
+  border: none;
+  cursor: pointer;
+}
+
+.selogin {
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 0.625rem 1.125rem;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 1.5rem 0 0.75rem 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 35%;
+}
+
+.container {
+  padding: 1.438rem;
+}
+
+span.psw {
+  float: right;
+  padding-top: 1rem;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 3.75rem;
+}
+
+/* Modal Content/Box */
+
+.container {
+  background-color: "white";
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 0.031rem solid #888;
+  width: 40%;
+  /* Could be more or less, depending on screen size */
+  border-radius: 7%;
+  box-shadow: 0.063rem 0.063rem 0.75rem #555;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 1.563rem;
+  top: 0;
+  color: #000;
+  font-size: 2.188rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Center website */
+.main {
+  max-width: 62.5rem;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3.125rem;
+  word-break: break-all;
+}
+
+.row {
+  margin: 0.625rem -1rem;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row>.column {
+  padding: 0.5rem;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+  /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/* ------------------------ */
+
+
+/* Main */
+
+
+.bloc_titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.titre1 {
+  font-size: 3rem;
+  align-self: center;
+}
+
+.titre1_solo {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+
+.grandebox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.btn {
+  margin: 7%;
+}
+
+.image {
+  height: 20rem;
+}
+
+.grandebox>li {
+  list-style-type: none;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.image_shadow {
+  box-shadow: 0rem 0rem 0.75rem rgba(0, 0, 0, 1);
+}
+
+.image_shadow:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+.image_af {
+  display: block;
+  height: 32rem;
+  box-shadow: 0rem 0rem 0.75rem rgba(0, 0, 0, 1);
+  margin-bottom: 18%;
+  transition: filter 0.4s ease-in-out;
+
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.container:hover .text {
+  opacity: 1;
+}
+
+.text {
+  margin: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  background: rgba(44, 44, 44, 0.836);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  width: 100%;
+  height: 25rem;
+  padding-top: 7rem;
+}
+
+
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  align-items: center;
+  background-color: #f1aeee;
+  padding: 1.25rem 1.875rem;
+}
+
+footer>a {
+  color: #000000;
+  text-decoration: none;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+
+
+  .titre1 {
+    margin-left: 5%;
+  }
+
+
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) and (max-width: 767px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  .nav-menu {
+    margin-left: 15%;
+  }
+
+  .timeline ul li div {
+    width: 15.6rem;
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: -20rem;
+  }
+
+  .formulaire {
+    margin: 0 5% 0 0;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+  .nav-menu {
+    margin-left: 30%;
+  }
+}
